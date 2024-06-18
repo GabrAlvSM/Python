@@ -3,12 +3,8 @@
 lista_num = []
 
 i=0
-while (len(lista_num) != 10):
-
-    novo_num = int(input("Digite um número: "))
+while (len(lista_num) < 10):
 
     lista_num.append(int(input("Digite um número: ")))
 
-    
-
-print(f"Valor mínimo: {min(lista_num)} valor máximo: {max(lista_num)}")
+print(f"Menor valor inserido: {min(lista_num)}. Maior valor lido: {max(lista_num)}")
