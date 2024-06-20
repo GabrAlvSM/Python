@@ -9,5 +9,5 @@ if (100 <= num <= 9999):
     i=0
     while i < len(num):
 
-        print(F"Posição {i+1} da lista: {num[i]}")
+        print(f"Posição {i+1} da lista: {num[i]}")
         i+=1
