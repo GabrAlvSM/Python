@@ -18,4 +18,5 @@ while (x1 != (top+1)):
     if x1 % 2 != 0:
         multp *= x1 
     x1+=1
+
 print(f"\nA soma dos pares de {bot} a {top} é: {soma} \nA multiplicação dos ímpares no intervalo de {bot} a {top} é: {multp}\n")
