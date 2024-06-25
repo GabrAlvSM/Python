@@ -18,7 +18,17 @@ while (True):
         else:
 
             idades_lista.append(idade)
-            print(f"idades já contabilizadas: \n{idades_lista}")
+            print("idades já contabilizadas: ", end=" ")
+
+            x=0
+            while (x < len(idades_lista)):
+
+                if (x == len(idades_lista)-1):
+                    print(idades_lista[x], end=".")
+                else:
+                    print(idades_lista[x], end=", ")
+                x+=1
+            print("\n")
         
 soma = 0
 i=0
@@ -29,4 +39,4 @@ while (i != len(idades_lista)):
 
 media = soma / len(idades_lista)
 
-print(f"A média de idade é: {media}\n")
+print(f"A média de idade é: {round(media,2)}\n")
