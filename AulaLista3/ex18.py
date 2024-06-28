@@ -4,7 +4,7 @@
 qnt = int(input("Informe a quantidade de valore a serem lidos: "))
 lista_num = []
 
-print("Digite 5 números: ")
+print(f"\nDigite {qnt} números: ")
 
 i=0
 while (len(lista_num) < qnt):
