@@ -23,6 +23,8 @@ while (len(valores) < 20):
             valores.append(num)
         i+=1
 
+print("\n\n")
+
 # lista completa
 print ("valores:", end=" ")
 x=0
@@ -58,3 +60,5 @@ while (True):
     else:
         print(impares[x], end=", ")
     x+=1
+
+print("\n\n")
