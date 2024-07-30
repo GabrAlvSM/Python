@@ -13,12 +13,13 @@ def calcExt(pesoTotal, valorT):
 
         valorT+=multa
 
-        return f"Extra pescado: {pesoExtra}Kg \nValor extra a ser pago: {multa}"
+        return (f"Extra pescado: {pesoExtra}Kg \nValor extra a ser pago: {multa}")
     else:
-        return f"Tudo nos conformes!\n Valor total do pescado: {valorT}"
+        return (f"Tudo nos conformes!\n Valor total do pescado: {valorT}")
+
+
 
 peixes = int(input("Informe a quantidade de pescados: "))
-
 
 i=0
 while peixes > i:
