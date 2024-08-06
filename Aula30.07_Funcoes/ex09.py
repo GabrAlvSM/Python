@@ -8,9 +8,10 @@ valHExtra:float = 1.5
 def calcTempo(entrada,saida):
     horaEntrada = entrada[0] + entrada[1]
     horaEntrada = int(horaEntrada)
-    minEntrada = entrada[2] + entrada[3]
-
+    minTransf = entrada[2] + entrada[3]
+    minTransf = int(horaEntrada)
     
+    tempoInic = minTransf + horaEntrada * 60
     return 
 
 entrada = input("Informe a hora de entrada do veículo (HH:mm): ")
