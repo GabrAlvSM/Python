@@ -2,6 +2,7 @@
 # por extenso. Exemplo: Data: 01/01/2000, Imprimir: 1 de janeiro de 2000.
 
 def formatacao(entrada):
+    numeros = []
     meses = {
         '01':"janeiro",
         '02':"fevereiro",
@@ -35,11 +36,9 @@ def formatacao(entrada):
         ano = numeros[4] + numeros[5] + numeros[6] + numeros[7]        
 
         mes:str = meses[dia]
-        
+
     print(f"{dia} de {mes} de {ano}")
 
+    data = str(input("Informe a data atual por extenso(ex: dd/mm/aaaa): "))
 
-data = input("Informe a data atual por extenso(ex: 01/01/2000): ")
-numeros = []
-
-formatacao(data)
+    formatacao(data)

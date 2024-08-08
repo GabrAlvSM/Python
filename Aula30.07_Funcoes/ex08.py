@@ -18,6 +18,7 @@ def calcExt(pesoTotal, valorT):
         return (f"Tudo nos conformes!\n Valor total do pescado: {valorT}")
 
 
+print("\n--Fish-o-matic-3000--\n")
 
 peixes = int(input("Informe a quantidade de pescados: "))
 
