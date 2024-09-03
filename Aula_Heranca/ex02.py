@@ -34,7 +34,7 @@ class Aluno(Pessoa): #Subclass
 
     def calc_media(self):
         media = sum(self.notas) / len(self.notas)
-        if media < 7.0:
+        if media < 5.0:
             return f"{self.nome} - Reprovado!"
         elif 5.0 < media <= 6.9:
             return f"{self.nome} - Exame!"
