@@ -1,47 +1,23 @@
-class Carro:
-    def __init__(self, marca, modelo, cor, ano, valor, consumo=9, nivel=5) -> None:
-        self.marca = marca
-        self.modelo = modelo
-        self.cor = cor
-        self.ano = ano
-        self.nivel = nivel
-        self.valor = valor
-        self.ligado = False
-        self.consumo = consumo
+class Aluno_Academia:
+    def __init__(self, nome, idade, peso, altura, mensalidade=120) -> None:
+        self.nome = nome
+        self.idade = idade
+        self.peso = peso
+        self.altura = altura
+        self.mensalidade = mensalidade
 
-    def ligar(self):
-        self.ligado = True
-        print("Veículo ligado!")
-    
-    def desligar(self):
-        self.ligado = False
-        print("Veículo desligado!")
+    def calc_IMC(self):
+        imc = self.peso / (self.altura **2)
+        print(f"IMC do aluno: {imc}")
 
-    def calcImposto(self):
-        imposto = self.valor * 0.025
-        return imposto
-    
-    def abastecer(self):
-        self.nivel += 70
-        print("Veículo abastecido!")
+    def obter_vaor_mensalidade(self): # A academia faz um desconto especial para menores de idade,
+        if self.idade < 18:
+            self.mensalidade *= 0.70
+            print(f"{self.mensalidade}")
+        else:
+            print(f"{self.mensalidade}")
 
-    def verifNivel(self):
-        return self.nivel
-    
-    def andar(self,km):
-        litros = km / self.consumo
-        self.nivel -= litros
-        print("Consumo:", litros)
+incrito1 = Aluno_Academia("Paulo", 28, 80, 1.80)
 
-carr = Carro("CHEVROLET", "Celta", "Preto", 2010, 20000)
-carr.ligar()
-carr.desligar()
-
-print(carr.verifNivel(), "litros")
-tanque = carr.abastecer()
-print(carr.nivel, "litros")
-
-imp = carr.calcImposto()
-print(f"R${imp} de imposto")
-
-carr.andar(30)
+incrito1.calc_IMC()
+incrito1.obter_vaor_mensalidade()
